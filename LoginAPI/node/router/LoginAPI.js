@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const User = require('../models/user');
+const { User } = require('../models/User');
+const { auth } = require("../middleware/auth");
 /* GET home page. */
 
 router.post('/register', (req, res) => {
@@ -15,15 +16,14 @@ router.post('/register', (req, res) => {
 })
 
 router.post('/signin', (req, res) => {
-    var userid = req.body.id; 
-    var password = req.body.pwd; 
-    console.log(userid, password); 
-    if (typeof userid !== "string" && typeof password !== "string") 
-    { 
-        res.send("login failed"); 
-        return; 
-    } 
-    User.findOne({ email: req.body.email }, (err, user) => {
+    var userid = req.body.id;
+    var password = req.body.pwd;
+    console.log(userid, password);
+    if (typeof userid !== "string" && typeof password !== "string") {
+        res.send("login failed");
+        return;
+    }
+    User.findOne({ userid: userid }, (err, user) => {
         if (!user) {
             return res.send("login failed" + err);
         }
@@ -34,16 +34,41 @@ router.post('/signin', (req, res) => {
                     loginSuccess: false,
                     message: "Wrong password"
                 });
-                else {
-                    res.render('login', {
-                        name: req.body.name,
-                        id: req.body.id,
-                        pwd: req.body.pwd
+            else {
+                console.log('로그인 되었습니다.');
+                console.log(user.token);
+                user.generateToken((err, user) => {
+                    if (err) return res.status(400).send(err);
+                    // 토큰을 쿠키에 저장
+                    res.cookie("user_auth", user.token)
+                        .render('login', {
+                            name: req.body.name,
+                            id: req.body.id,
+                            pwd: req.body.pwd
                     })
-                }
-            // 일치 시, 토큰 생성 후 쿠키에 저장
+                });
+            }
         });
-    }); 
+    });
 });
+
+router.get('/auth', auth, (req, res) => {
+    // 여기까지 미들웨어(auth.js)를 통과해 왔다는 얘기는 Authentication이 True라는 말
+    // 클라이언트에게 유저 정보 전달
+    res.render('auth', {
+        isAuth: true
+    });
+})
+
+router.get('/logout', auth, (req, res) => {
+    User.findOneAndUpdate({ _id: req.user._id },
+        { token: "" }
+        , (err, user) => {
+            if (err) return res.json({ success: false, err });
+            return res.status(200).send({
+                success: true
+            })
+        })
+})
 
 module.exports = router;

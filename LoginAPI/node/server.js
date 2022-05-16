@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const loginRouter = require('./router/LoginAPI');
+const cookieParser = require("cookie-parser");
 
+app.set('view engine', 'ejs');
+app.set('views', './views');
 app.use(express.urlencoded({ extended: true }))
 app.use('/static', express.static('public'));
-app.set('view engine', 'ejs');
+app.use(cookieParser());
 
 mongoose.connect('mongodb+srv://over1122:dmswn1122!@cluster0.5mcs5.mongodb.net/cluster0?retryWrites=true&w=majority');
 var db = mongoose.connection;
@@ -16,7 +19,7 @@ db.once('open', function () {
 });
 
 app.get('/', (req, res) => {
-    res.render('index')//__dirname은 파일명(index.html)을 제외한 절대경로
+    res.render('index') 
 });
 
 app.use('/login', loginRouter);
