@@ -9,7 +9,7 @@ router.post('/register', (req, res) => {
     const user = new User({
         username: req.body.name,
         userid: req.body.id,
-        password: req.body.pwd
+        password: req.body.pwd,
     })
     user.save()
     console.log('저장 완료')
@@ -36,7 +36,6 @@ router.post('/signin', (req, res) => {
                 });
             else {
                 console.log('로그인 되었습니다.');
-                console.log(user.token);
                 user.generateToken((err, user) => {
                     if (err) return res.status(400).send(err);
                     // 토큰을 쿠키에 저장
@@ -64,10 +63,8 @@ router.get('/logout', auth, (req, res) => {
     User.findOneAndUpdate({ _id: req.user._id },
         { token: "" }
         , (err, user) => {
-            if (err) return res.json({ success: false, err });
-            return res.status(200).send({
-                success: true
-            })
+            if (err) return res.send('로그아웃에 실패하였습니다.' + err);
+            return res.send('로그아웃이 완료되었습니다.')
         })
 })
 

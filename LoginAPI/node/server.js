@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const loginRouter = require('./router/LoginAPI');
+const imageRouter = require('./router/image');
 const cookieParser = require("cookie-parser");
 
 app.set('view engine', 'ejs');
@@ -22,6 +23,7 @@ app.get('/', (req, res) => {
     res.render('index') 
 });
 
+app.use('/image', imageRouter)
 app.use('/login', loginRouter);
 
 let port = 8080;
