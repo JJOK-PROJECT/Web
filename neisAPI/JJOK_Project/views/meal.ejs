@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" id="pbtn" value="이전 달" />
+    <input type="button" id="nbtn" value="다음 달" />
+    <table>
+        <th>번호</th>
+        <th>조식</th>
+        <th>중식</th>
+        <th>석식</th>
+        <% for(var i=0; i < date; i++){ %>
+            <tr>
+                <td>
+                    <%= i + 1 %>
+                </td>
+                <td>
+                    <%= data.School_Meal[i].day[0].조식 %>
+                </td>
+                <td>
+                    <%= data.School_Meal[i].day[1].중식 %>
+                </td>
+                <td>
+                    <%= data.School_Meal[i].day[2].석식 %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+    <script>
+        let queryString = location.search;
+        let url = new URLSearchParams(queryString);
+        let month = Number(url.get("month"));
+        let year = Number(url.get("year"));
+        document.getElementById("nbtn").onclick = function () {
+            month = (month + 1) % 12;
+            if (month == 0) //month를 12로 나누었을 떄 0이면 12월을 의미한다.
+            {
+                month = 12;
+            }
+            if (month == 1) {
+                year++;
+            }
+            location.href = "/meal?year=" + year + "&month=" + month;
+        };
+        document.getElementById("pbtn").onclick = function () {
+            month = (month - 1) % 12;
+            if (month == 0) //month를 12로 나누었을 떄 0이면 12월을 의미한다.
+            {
+                month = 12;
+                year--;
+            }
+            location.href = "/meal?year=" + year + "&month=" + month;
+        };
+    </script>
+</body>
+
+</html>

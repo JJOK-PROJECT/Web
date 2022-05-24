@@ -1,0 +1,37 @@
+process.env.timeZone = "Asia/Seoul";
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
+
+var express = require('express');
+var router = express.Router();
+const neis = require('neis');
+
+let meal_array = new Array();
+
+router.get('/', (req, res) => {
+    let year = req.query.year;
+    let month = req.query.month;
+    let LastDate = new Date(year, month, 0);
+    let meal_array = new Array();
+    const school = neis.createSchool(neis.REGION.BUSAN, "C100000450", neis.TYPE.HIGH);
+    school.getMeal(year, month).then(d => {
+        console.log(month);
+        console.log(d.length);
+        for (let i = 1; i <= LastDate.getDate(); i++) {
+            meal_array.push({
+                'day': [
+                    { '조식': neis.removeAllergy(d[i].breakfast) },
+                    { '중식': neis.removeAllergy(d[i].lunch) },
+                    { '석식': neis.removeAllergy(d[i].dinner) }
+                ]
+            });
+        }
+        const json = {
+            "School_meal": meal_array
+        }
+        console.log(JSON.stringify(json));
+        res.render('meal', {data: json, day: LastDate.getDate()});
+    });
+});
+
+
+module.exports = router;

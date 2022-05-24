@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,9 @@
     "express": "^4.18.0",
     "fs": "^0.0.1-security",
     "neis": "^0.5.1",
+    "nodemon": "^2.0.16",
     "request": "^2.88.2",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "school-kr": "^3.1.2"
   }
 }

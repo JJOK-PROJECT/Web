@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <p>여기는 메인 페이지입니당.</p>
+    <input id="btn_s" type="button" value="학사일정 보러가기" />
+    <input id="btn_m" type="button" value="급식 보러 가기" />
+    <script>
+        let date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        window.onload = function () {
+                document.getElementById("btn_s").onclick = function() {
+                    location.href = `/schedule?year=${year}&month=${month}`;
+                };
+                document.getElementById("btn_m").onclick = function() {
+                    location.href = `/meal?year=${year}&month=${month}`;
+                }
+            }
+    </script>
+</body>
+</html>
