@@ -23,12 +23,13 @@ router.get('/', (req, res) => {
 router.post('/upload', auth, upload.single('imageFile'), (req, res) => {
     let date = new Date();
     let today = date.getDate();
-
+    let tomorrow = new Date(date.setDate(date.getDate() + 1));
+    console.log(tomorrow.getDate())
     var image = '/static/image/' + req.file.filename
     let upload = 'http://localhost:7080/image/' + req.file.filename;
     let array = {
         image_path: upload,
-        upload_day: today
+        upload_day: today + '/' + date.getHours() + '/' + date.getMinutes()
     }
     User.findOneAndUpdate({ _id: req.user._id },{$push : {image: array}}, (err, user) => {
         if (err) return res.json({ success: false, err });
