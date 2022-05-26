@@ -16,10 +16,12 @@
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "firebase": "^9.6.10",
+    "forever": "^4.0.3",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.5.0",
     "mongoose": "^6.2.10",
-    "multer": "^1.4.4"
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.16"
   }
 }

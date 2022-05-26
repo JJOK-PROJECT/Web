@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.use('/image', imageRouter)
 app.use('/login', loginRouter);
 
-let port = 8080;
+let port = 8888;
 app.listen(port, () => {
     console.log('server on! http://localhost:' + port);
 });
