@@ -1,0 +1,44 @@
+const request = require('request');
+
+let LastDate = new Date(
+    2021,
+    3
+    , 0
+);
+
+let array = new Array();
+let Size = 10;
+let Index = 1;
+let API_KEY = '4ffe5ca8444d42a58fed5d5f817c82fe'
+let url = `https://open.neis.go.kr/hub/SchoolSchedule?KEY=${API_KEY}&Type=json&pIndex=${Index}&pSize=${Size}&ATPT_OFCDC_SC_CODE=C10&SD_SCHUL_CODE=7150658`
+let EVENT_NM;
+let AA_YMD;
+
+request(url, function (error, response, body) {
+    if (error) {
+        console.log(error);
+    }
+    var json = JSON.parse(body);
+    for(let i = 0; i < Size; i++) {
+        EVENT_NM = json.SchoolSchedule[1].row[i].EVENT_NM;
+        AA_YMD = json.SchoolSchedule[1].row[i].AA_YMD;
+        let day = Number(AA_YMD) % 100;
+        let month = Number(AA_YMD) % 1000 / 100;
+        let month_req = 3;
+        if(month = month_req) {
+            array[day - 1] = {'day' :  EVENT_NM};
+        }
+    }
+    for(let i = 0; i < LastDate.getDate(); i++) {
+        if(array[i] == null) {
+            array[i] = {'day': '비어있음'};
+        }
+    }
+    const schedule_json = {
+        'schedule_day' : array
+    }
+
+    console.log(JSON.stringify(schedule_json));
+});
+
+
