@@ -17,11 +17,11 @@ const upload = multer({
     }),
 });
 
-router.get('/', (req, res) => {
+router.get('/', auth,(req, res) => {
     res.render('image')
 })
 
-router.post('/upload', auth, upload.single('imageFile'), (req, res) => {
+router.post('/upload', upload.single('imageFile'), (req, res) => {
     let date = new Date();
     let today = date.getDate();
     // let tomorrow = new Date(date.setDate(date.getDate() + 1));
