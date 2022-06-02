@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 const nodemailer = require('nodemailer');
-const path = require('path');
 const { User } = require('../models/User');
 const { auth } = require("../middleware/auth");
+
+let authNum = Math.random().toString().substr(2, 6);
 
 router.post('/register', (req, res) => {
     res.render('register')
@@ -11,6 +12,7 @@ router.post('/register', (req, res) => {
         username: req.body.name,
         userid: req.body.id,
         password: req.body.pwd,
+        email: req.body.email
     })
     user.save()
     console.log('저장 완료')
@@ -62,13 +64,7 @@ router.get('/logout', auth, (req, res) => {
         })
 })
 
-router.post('/mail', async(req, res) => {
-    let authNum = Math.random().toString().substr(2, 6);
-    let emailTemplete;
-    res.render('authMail', { authCode: authNum }, function (err, data) {
-        if (err) { console.log(err) }
-        emailTemplete = data;
-    });
+router.get('/mail', async(req, res) => {
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -77,7 +73,7 @@ router.post('/mail', async(req, res) => {
         secure: false,
         auth: {
             user: "lap721181@gmail.com",
-            pass: "dmswn1122"
+            pass: "hrjeywvvlkybdszv"
         },
     });
 
@@ -86,7 +82,10 @@ router.post('/mail', async(req, res) => {
         from: "lap721181@gmail.com",
         to: req.query.email,
         subject: "회원가입 완료를 위해 아래에 적혀진 인증코드를 인증코드 입력 칸에 적어주세요.",
-        html: emailTemplete
+        html: 
+        `<p style='color: black'>회원 가입을 위한 인증번호 입니다.</p>
+        <p style = 'color:black'>아래의 인증 번호를 입력하여 인증을 완료해주세요.</p>
+        <h2>${authNum}</h2>`
     });
 
     transporter.sendMail(mailOptions, function (error, info) {
@@ -97,9 +96,12 @@ router.post('/mail', async(req, res) => {
         res.send(authNum);
         transporter.close()
     });
+
+    res.render('index');
 })
 
 router.get('/check', (req, res) => {
+    console.log(req.query.name)
     User.findOne({username: req.query.name}, function (err, user) {
         if (err) return res.send('로그아웃에 실패하였습니다.' + err);
         else if(user == null) { //닉네임이 없다는 것은 중복되는 닉네임이 없다는 것을 의미함.
@@ -109,6 +111,16 @@ router.get('/check', (req, res) => {
             return res.render('check', { success: false })
         }
     })
+})
+
+router.get('/checkCode', function (req, res) {
+    console.log(authNum, req.query.code);
+    if (req.query.code === authNum) {
+        res.render('checkCode', { success: true })
+    }
+    else {
+        res.render('checkCode', { success: false })
+    }
 })
 
 module.exports = router;

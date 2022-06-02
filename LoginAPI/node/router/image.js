@@ -36,6 +36,7 @@ router.post('/upload', auth, upload.single('imageFile'), (req, res) => {
     const json = {
         'image_path' : image_array
     }
+    console.log(json);
     User.findOneAndUpdate({ _id: req.user._id },{$push : {image: array}}, (err, user) => {
         if (err) return res.json({ success: false, err });
         else {
