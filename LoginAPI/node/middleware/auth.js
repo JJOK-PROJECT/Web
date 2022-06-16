@@ -8,7 +8,7 @@ let auth = (req, res, next) => {
     // 토큰을 복호화 한후  유저를 찾는다.
     User.findByToken(token, (err, user) => {
         if (err) throw err;
-        if (!user) return res.send('로그인 후 이용해주시기 바랍니다.')
+        if (!user) return res.json({massage:'로그인 후 이용해주시기 바랍니다.'})
 
 
         // console.log('userh', user)

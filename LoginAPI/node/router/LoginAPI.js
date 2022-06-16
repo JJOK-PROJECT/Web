@@ -7,15 +7,34 @@ const { auth } = require("../middleware/auth");
 let authNum = Math.random().toString().substr(2, 6);
 
 router.post('/register', (req, res) => {
-    res.render('register')
     const user = new User({
         username: req.body.name,
         userid: req.body.id,
         password: req.body.pwd,
-        email: req.body.email
+        email: req.body.email,
+        status: req.body.status,
+        grade: req.body.grade,
     })
-    user.save()
-    console.log('저장 완료')
+    user.save((err, result) => {
+        if (err) {
+            res.json({
+                success: false,
+                massage: 'post data가 제대로 들어오지 않았습니다. 다시 시도해주겠습니까?'
+            });
+        }
+        else {
+            console.log('저장 완료')
+            res.status(200).json({
+                username: req.body.name,
+                userid: req.body.id,
+                password: req.body.pwd,
+                email: req.body.email,
+                status: req.body.status,
+                grade: req.body.grade,
+                success: true
+            });
+        }
+    })
 })
 
 router.post('/signin', (req, res) => {
@@ -28,22 +47,23 @@ router.post('/signin', (req, res) => {
     }
     User.findOne({ userid: userid }, (err, user) => {
         if (!user) {
-            return res.send("login failed" + err);
+            return res.json({massage: "유저를 찾을 수 없습니다."});
         }
         // 요청된 이메일이 db에 있다면 비밀번호 일치여부 확인
         user.comparePassword(password, (err, isMatch) => {
             if (!isMatch)
                 return res.json({
                     loginSuccess: false,
-                    message: "Wrong password"
+                    message: "틀린 패스워드를 입력하셨습니다."
                 });
             else {
                 console.log('로그인 되었습니다.');
                 user.generateToken((err, user) => {
-                    if (err) return res.status(400).send(err);
+                    if (err) return res.status(400).send({ success: false, massage: "error"});
                     // 토큰을 쿠키에 저장
                     res.cookie("user_auth", user.token)
-                        .render('login', {
+                        .json({
+                            success: true,
                             name: req.body.name,
                             id: req.body.id,
                             pwd: req.body.pwd
@@ -90,25 +110,25 @@ router.get('/mail', async(req, res) => {
 
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
-            console.log(error);
+            res.json({ error: error, success: false});
+        }
+        else {
+            res.status(200).json({ success: true, email: req.query.email});
         }
         console.log("Finish sending email : " + info.response);
-        res.send(authNum);
         transporter.close()
     });
-
-    res.render('index');
 })
 
 router.get('/check', (req, res) => {
     console.log(req.query.name)
     User.findOne({username: req.query.name}, function (err, user) {
-        if (err) return res.send('로그아웃에 실패하였습니다.' + err);
+        if (err) return res.json({success: false, massage: err});
         else if(user == null) { //닉네임이 없다는 것은 중복되는 닉네임이 없다는 것을 의미함.
-            return res.render('check', {success: true})
+            return res.json({success: true, massage:"중복된 닉네임 X"})
         }
         else { // 닉네임이 찾아졌다는 것은 이미 DB에 있다는 것임. 즉, 중복된 닉네임이므로 불가능하다는 메세지 보내기.
-            return res.render('check', { success: false })
+            return res.json({ success: false, massage:"닉네임 중복 됨." })
         }
     })
 })
@@ -116,10 +136,10 @@ router.get('/check', (req, res) => {
 router.get('/checkCode', function (req, res) {
     console.log(authNum, req.query.code);
     if (req.query.code === authNum) {
-        res.render('checkCode', { success: true })
+        res.json({ success: true, code: req.query.code})
     }
     else {
-        res.render('checkCode', { success: false })
+        res.json({ success: false, massage: '코드가 일치하지 않습니다.' })
     }
 })
 

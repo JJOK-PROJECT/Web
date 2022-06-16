@@ -20,7 +20,9 @@ db.once('open', function () {
 });
 
 app.get('/', (req, res) => {
-    res.render('index') 
+    res.status(200).json({
+        massage: "인덱스 화면과 연결 잘 됨."
+    });
 });
 
 app.use('/image', imageRouter)

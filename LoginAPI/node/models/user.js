@@ -21,6 +21,12 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
     },
+    status: {
+        type: String,
+    },
+    grade: { 
+        type: Number
+    },
     image: [{
         image_path: {type: String},
         upload_day: {type: String},
