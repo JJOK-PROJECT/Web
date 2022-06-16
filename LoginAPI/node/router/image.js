@@ -18,12 +18,14 @@ const upload = multer({
 });
 
 router.get('/', auth,(req, res) => {
-    res.render('image')
+    let token = req.cookies.user_auth;
+    res.status(200).json({ massage:'이미지 화면에 들어오신 것을 확인하십니다.', isAuth: true, token: token });
 })
 
 router.post('/upload', upload.single('imageFile'), (req, res) => {
     let date = new Date();
     let today = date.getDate();
+    let token = req.cookies.user_auth;
     // let tomorrow = new Date(date.setDate(date.getDate() + 1));
     // console.log(tomorrow.getDate())
     var image = '/static/image/' + req.file.filename
@@ -37,10 +39,10 @@ router.post('/upload', upload.single('imageFile'), (req, res) => {
         'image_path' : image_array
     }
     console.log(json);
-    User.findOneAndUpdate({ _id: req.user._id },{$push : {image: array}}, (err, user) => {
+    User.findOneAndUpdate({ token: token },{$push : {image: array}}, (err, user) => {
         if (err) return res.json({ success: false, err });
         else {
-            return res.render('gallary', { image_json: json })
+            return res.status(200).json({ image_json: json, massage: '제대로 전달 됨.', success: true })
         }
     })
 });

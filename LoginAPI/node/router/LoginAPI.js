@@ -4,8 +4,6 @@ const nodemailer = require('nodemailer');
 const { User } = require('../models/User');
 const { auth } = require("../middleware/auth");
 
-let authNum = Math.random().toString().substr(2, 6);
-
 router.post('/register', (req, res) => {
     const user = new User({
         username: req.body.name,
@@ -76,16 +74,17 @@ router.post('/signin', (req, res) => {
 
 
 router.get('/logout', auth, (req, res) => {
-    User.findOneAndUpdate({ _id: req.user._id },
+    let token = req.cookies.user_auth;
+    User.findOneAndUpdate({ token: token },
         { token: "" }
         , (err, user) => {
-            if (err) return res.send('로그아웃에 실패하였습니다.' + err);
-            return res.send('로그아웃이 완료되었습니다.')
+            if (err) return res.json({massage: 'login을 한 뒤에 할 수 있는 기능입니다.'});
+            return res.json({massage:'로그아웃이 완료되었습니다.', isAuth: true})
         })
 })
 
 router.get('/mail', async(req, res) => {
-
+    let authNum = Math.random().toString().substr(2, 6);
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         host: 'smtp.gmail.com',
