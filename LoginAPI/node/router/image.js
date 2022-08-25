@@ -2,9 +2,27 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 var multer = require('multer');
-const { User } = require('../models/User');
 const { auth } = require("../middleware/auth");
-let image_array = new Array();
+require("dotenv").config();
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host: process.env.MYSQL_HOST,
+    port: '3306',
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWARD,
+    database: 'userDB'
+})
+
+conn.connect((err) => {
+    if (err) {
+        console.log(err)
+    }
+    else {
+        console.log('mysql connecting...')
+    }
+})
+
 const upload = multer({
     storage: multer.diskStorage({
         destination: function (req, file, cb) {
@@ -23,28 +41,21 @@ router.get('/', auth,(req, res) => {
 })
 
 router.post('/upload', upload.single('imageFile'), (req, res) => {
-    let date = new Date();
-    let today = date.getDate();
     let token = req.cookies.user_auth;
     // let tomorrow = new Date(date.setDate(date.getDate() + 1));
     // console.log(tomorrow.getDate())
     var image = '/static/image/' + req.file.filename
     let upload = 'http://localhost:7080/image/' + req.file.filename;
-    let array = {
-        image_path: upload,
-        upload_day: today + '/' + date.getHours() + '/' + date.getMinutes()
-    }
-    image_array.push(image)
-    const json = {
-        'image_path' : image_array
-    }
-    console.log(json);
-    User.findOneAndUpdate({ token: token },{$push : {image: array}}, (err, user) => {
-        if (err) return res.json({ success: false, err });
-        else {
-            return res.status(200).json({ image_json: json, massage: '제대로 전달 됨.', success: true })
+
+    conn.query(`update userTable set image_path = '${image}', path_flutter = '${upload}' where token = '${token}'`, (err, result) => {
+        if(err) {
+            return res.json({ success: false, err });
+        } else {
+            console.log(result);
+            return res.status(200).json({ massage: '제대로 전달 됨.', success: true, image : image, upload: upload })
         }
     })
+
 });
 
 module.exports = router;

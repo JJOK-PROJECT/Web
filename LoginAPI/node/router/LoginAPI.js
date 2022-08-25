@@ -1,86 +1,115 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const nodemailer = require('nodemailer');
-const { User } = require('../models/User');
 const { auth } = require("../middleware/auth");
+require("dotenv").config();
+const mysql = require('mysql');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
+const conn = mysql.createConnection({
+    host: process.env.MYSQL_HOST,
+    port: '3306',
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWARD,
+    database: 'userDB'
+})
+
+conn.connect((err) => {
+    if (err) {
+        console.log(err)
+    }
+    else {
+        console.log('mysql connecting...')
+    }
+})
 
 router.post('/register', (req, res) => {
-    const user = new User({
-        username: req.body.name,
-        userid: req.body.id,
-        password: req.body.pwd,
-        email: req.body.email,
-        status: req.body.status,
-        grade: req.body.grade,
-    })
-    user.save((err, result) => {
-        if (err) {
-            res.json({
-                success: false,
-                massage: 'post data가 제대로 들어오지 않았습니다. 다시 시도해주겠습니까?'
+    const name = req.body.name
+    const uid = req.body.id
+    const password = bcrypt.hashSync(`${req.body.pwd}`, 10);
+    const email = req.body.email
+    const status = req.body.status
+    const grade = req.body.grade
+
+    conn.query(`insert into userTable(userName, userId, password, email, status, grade) value(
+        '${name}',
+        '${uid}',
+        '${password}',
+        '${email}',
+        '${status}',
+        ${grade}
+    )`, (err, results) => {
+        if(err) {
+            res.json({'massage': err});
+        } else {
+            res.json({ 
+                'name' : name,
+                'uid' : uid,
+                'password' : password,
+                'email' : email,
+                'status' : status,
+                'grade' : grade
             });
         }
-        else {
-            console.log('저장 완료')
-            res.status(200).json({
-                username: req.body.name,
-                userid: req.body.id,
-                password: req.body.pwd,
-                email: req.body.email,
-                status: req.body.status,
-                grade: req.body.grade,
-                success: true
-            });
-        }
-    })
+    });
 })
 
 router.post('/signin', (req, res) => {
-    var userid = req.body.id;
-    var password = req.body.pwd;
-    console.log(userid, password);
-    if (typeof userid !== "string" && typeof password !== "string") {
+    const uid = req.body.id;
+    const pwd = req.body.pwd;
+
+    if (typeof uid !== "string" && typeof pwd !== "string") {
         res.send("login failed");
         return;
     }
-    User.findOne({ userid: userid }, (err, user) => {
-        if (!user) {
-            return res.json({massage: "유저를 찾을 수 없습니다."});
+
+    conn.query(`select password from userTable where userId ='${uid}'`, (err, result) => {
+        if(err) {
+            return res.json({'massage' : err});
         }
-        // 요청된 이메일이 db에 있다면 비밀번호 일치여부 확인
-        user.comparePassword(password, (err, isMatch) => {
-            if (!isMatch)
-                return res.json({
-                    loginSuccess: false,
-                    message: "틀린 패스워드를 입력하셨습니다."
-                });
-            else {
-                console.log('로그인 되었습니다.');
-                user.generateToken((err, user) => {
-                    if (err) return res.status(400).send({ success: false, massage: "error"});
-                    // 토큰을 쿠키에 저장
-                    res.cookie("user_auth", user.token)
-                        .json({
-                            success: true,
-                            name: req.body.name,
-                            id: req.body.id,
-                            pwd: req.body.pwd
-                    })
-                });
-            }
-        });
-    });
+        if (result.length === 1) {
+            const encodePwd = result[0].password
+            bcrypt.compare(pwd, encodePwd, (err, same) => {
+                if(err) {
+                    return res.json({ 'massage': err });
+                } else {
+                    console.log('로그인 되었습니다.');
+                    const token = jwt.sign(uid, 'secretToken')
+                    console.log('Token : ', token)
+                    conn.query(`update userTable set token = '${token}' where userId = '${uid}'`, (err, result) => {
+                        if (err) {
+                            res.json({ 'massage': err });
+                        } else {
+                            console.log(result);
+                            return res.cookie("user_auth", token)
+                                .json({
+                                    success: true,
+                                    name: req.body.name,
+                                    id: req.body.id,
+                                    pwd: req.body.pwd
+                                })
+                        }
+                    });
+                }
+            })
+        } else {
+            return res.json({ massage: "유저를 찾을 수 없습니다." });
+        }
+    })
 });
 
 
 router.get('/logout', auth, (req, res) => {
     let token = req.cookies.user_auth;
-    User.findOneAndUpdate({ token: token },
-        { token: "" }
-        , (err, user) => {
-            if (err) return res.json({massage: 'login을 한 뒤에 할 수 있는 기능입니다.'});
-            return res.json({massage:'로그아웃이 완료되었습니다.', isAuth: true})
-        })
+    conn.query(`update userTable set token = '' where token = '${token}'`, (err, result) => {
+        if (err) { // token을 가진 사용자가 없다
+            return res.json({ 'massage': err });
+        } else {
+            res.json({ 'massage': '로그아웃이 완료되었습니다.', })
+        }
+    })
+    
 })
 
 router.get('/mail', async(req, res) => {
@@ -121,15 +150,16 @@ router.get('/mail', async(req, res) => {
 
 router.get('/check', (req, res) => {
     console.log(req.query.name)
-    User.findOne({username: req.query.name}, function (err, user) {
-        if (err) return res.json({success: false, massage: err});
-        else if(user == null) { //닉네임이 없다는 것은 중복되는 닉네임이 없다는 것을 의미함.
-            return res.json({success: true, massage:"중복된 닉네임 X"})
+    conn.query(`select userName from userTable where userName = '${req.query.name}'`, (err, user) => {
+        if (err) return res.json({ success: false, massage: err });
+        else if (user.length === 0) { //닉네임이 없다는 것은 중복되는 닉네임이 없다는 것을 의미함.
+            return res.json({ success: true, massage: "중복된 닉네임 X" })
         }
         else { // 닉네임이 찾아졌다는 것은 이미 DB에 있다는 것임. 즉, 중복된 닉네임이므로 불가능하다는 메세지 보내기.
-            return res.json({ success: false, massage:"닉네임 중복 됨." })
+            return res.json({ success: false, massage: "닉네임 중복 됨." })
         }
     })
+    
 })
 
 router.get('/checkCode', function (req, res) {
