@@ -7,6 +7,7 @@ const key = process.env.KEY
 const date = new Date();
 const month = ('0' + (date.getMonth() + 1)).slice(-2);
 const today = `${date.getFullYear()}${month}${date.getDate()}`
+console.log(today);
 let json_arr = Array()
 
 
@@ -21,6 +22,11 @@ app.get('/api/school/neisAPI/timeline', (req,res) => {
             console.log(error)
         }
         let obj = JSON.parse(body)
+        console.log(JSON.stringify(obj).length)
+        if(JSON.stringify(obj).length === 58) {
+            console.log('하하')
+            return res.json({"massage" : 'no timetable'})
+        }
         for (let i = 0; i < obj.hisTimetable[1].row.length; i++) {
             json_arr.push({
                 'time': obj.hisTimetable[1].row[i].PERIO,
