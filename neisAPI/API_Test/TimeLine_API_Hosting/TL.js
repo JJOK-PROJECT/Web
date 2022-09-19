@@ -11,8 +11,6 @@ console.log(today);
 let json_arr = Array()
 
 
-
-
 app.get('/api/school/neisAPI/timeline', (req,res) => {
     const grade = req.query.grade;
     const classs = req.query.classs
@@ -22,6 +20,7 @@ app.get('/api/school/neisAPI/timeline', (req,res) => {
             console.log(error)
         }
         let obj = JSON.parse(body)
+        console.log(obj);
         console.log(JSON.stringify(obj).length)
         if(JSON.stringify(obj).length === 58) {
             console.log('하하')
