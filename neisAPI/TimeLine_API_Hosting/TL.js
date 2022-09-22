@@ -24,6 +24,7 @@ app.get('/api/school/neisAPI/timeline', (req,res) => {
             console.log('하하')
             return res.json({"massage" : 'no timetable'})
         }
+        console.log(obj.hisTimetable[1].row.length)
         for (let i = 0; i < obj.hisTimetable[1].row.length; i++) {
             json_arr.push({
                 'time': obj.hisTimetable[1].row[i].PERIO,
