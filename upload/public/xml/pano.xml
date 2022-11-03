@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node2" appversion="6.0.2" apprev="17253">
+  <panorama id="node2">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="12.11" fov="100.79" pan="143.37" projection="4"/>
+      <flyin tilt="12.11" fov="100.79" pan="143.37" projection="4"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:00" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-84.4/6.5/100.0" tilt="1.26" id="Point01" pan="-103.99" description="" skinid="ht_node" url="{node3}" title="중앙현관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:02" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-97.5/5.1/100.0" tilt="-3.33" id="Point01" pan="-256.07" description="" skinid="ht_node" url="{node4}" title="운동장"/>
+      <hotspot target="50.4/18.7/100.0" tilt="0.85" id="Point02" pan="-354.86" description="" skinid="ht_node" url="{node5}" title="융합관 현관"/>
+      <hotspot target="151.7/0.5/100.0" tilt="1.62" id="Point03" pan="-70.07" description="" skinid="ht_node" url="{node6}" title="중앙현관"/>
+      <hotspot target="88.0/-2.5/100.0" tilt="-0.51" id="Point04" pan="-180" description="" skinid="ht_node" url="{node2}" title="학교 정문"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 7:58" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-27.6/5.8/100.0" tilt="-0.06" id="Point01" pan="-144.43" description="" skinid="ht_node" url="{node7}" title="SRC 가는길"/>
+      <hotspot target="-85.0/4.0/100.0" tilt="-0.74" id="Point02" pan="-235.53" description="" skinid="ht_node" url="{node3}" title="학교 중앙 현관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:02" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-27.4/6.2/100.0" tilt="-3.84" id="Point01" pan="-252.4" description="" skinid="ht_node" url="{node7}" title="SRC 가는길"/>
+      <hotspot target="-85.2/1.3/100.0" tilt="-0.45" id="Point02" pan="-145.57" description="" skinid="ht_node" url="{node3}" title="학교 중앙 현관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022:10:05 16:51:15" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-70.3/-2.4/100.0" tilt="7.08" id="Point01" pan="-27.77" description="" skinid="ht_node" url="{node10}" title="SRC 2F 강당입구"/>
+      <hotspot target="-152.4/-5.8/100.0" tilt="-0.93" id="Point02" pan="-297.97" description="" skinid="ht_node" url="{node4}" title="운동장"/>
+      <hotspot target="53.4/22.3/100.0" tilt="-3.87" id="Point03" pan="-207.66" description="" skinid="ht_node" url="{node5}" title="융합관 현관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node6">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:01" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="62.9/-1.2/100.0" tilt="-3.28" id="Point01" pan="-150.16" description="" skinid="ht_node" url="{node8}" title="협업기업관"/>
+      <hotspot target="15.9/-7.5/100.0" tilt="-2.38" id="Point02" pan="-283.31" description="" skinid="ht_node" url="{node9}" title="급식실 이동 복도"/>
+      <hotspot target="-84.8/3.9/100.0" tilt="-4.67" id="Point03" pan="-38.12" description="" skinid="ht_node" url="{node3}" title="중앙현관"/>
+      <hotspot target="" tilt="-0.85" id="Point04" pan="-204.86" description="" skinid="ht_video_youtube" url="WP6FNcJBb7U" title="부산소프트웨어마이스터고 홍보영상"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node9">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:01" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="75.5/-1.6/100.0" tilt="0.03" id="Point01" pan="-151.26" description="" skinid="ht_node" url="{node11}" title="2층 급식실 이동 계단"/>
+      <hotspot target="152.1/-0.4/100.0" tilt="-1.34" id="Point02" pan="-252.74" description="" skinid="ht_node" url="{node6}" title="중앙현관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node8">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:01" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="144.2/-8.4/100.0" tilt="-5.98" id="Point01" pan="-302.78" description="" skinid="ht_node" url="{node12}" title="1,2F 이동 복도"/>
+      <hotspot target="151.8/-0.0/100.0" tilt="-2.56" id="Point02" pan="-211.47" description="" skinid="ht_node" url="{node6}" title="중앙현관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node11">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:02" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-150.0/-7.0/100.0" tilt="-2.77" id="Point01" pan="-289.77" description="" skinid="ht_node" url="{node15}" title="급식실"/>
+      <hotspot target="38.8/0.8/100.0" tilt="-0.83" id="Point02" pan="-216.84" description="" skinid="ht_node" url="{node16}" title="2F 쉼터"/>
+      <hotspot target="15.5/-4.9/100.0" tilt="-30.1" id="Point03" pan="-109" description="" skinid="ht_node" url="{node9}" title="급식실 이동 복도"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node12">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:01" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="173.3/-15.2/100.0" tilt="-6.31" id="Point01" pan="-211.02" description="" skinid="ht_node" url="{node13}" title="프로그래밍실2"/>
+      <hotspot target="57.0/-13.1/100.0" tilt="-1.2" id="Point02" pan="-300.4" description="" skinid="ht_node" url="{node14}" title="창의디자인실"/>
+      <hotspot target="61.2/-3.8/100.0" tilt="-1.77" id="Point03" pan="-124.67" description="" skinid="ht_node" url="{node8}" title="협업기업관"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node13">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:04" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="146.3/-6.1/100.0" tilt="-3.8" id="Point01" pan="-226.15" description="" skinid="ht_node" url="{node12}" title="1,2F 이동 복도"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node14">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:04" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="144.2/-7.8/100.0" tilt="-2.15" id="Point01" pan="-95.62" description="" skinid="ht_node" url="{node12}" title="1,2F 이동 복도"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node16">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:02" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-67.3/-2.7/100.0" tilt="-1.63" id="Point01" pan="-327.43" description="" skinid="ht_node" url="{node17}" title="2F 도서관 복도"/>
+      <hotspot target="73.6/-6.9/100.0" tilt="-6.33" id="Point02" pan="-159.53" description="" skinid="ht_node" url="{node11}" title="2층 급식실 이동 계단"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node17">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:04" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="73.6/-3.3/100.0" tilt="-3.37" id="Point01" pan="-288.66" description="" skinid="ht_node" url="{node18}" title="3F 베르실"/>
+      <hotspot target="-66.8/-0.1/100.0" tilt="0.55" id="Point02" pan="-51.25" description="" skinid="ht_node" url="{node10}" title="SRC 2F 강당입구"/>
+      <hotspot target="" tilt="0.59" id="Point03" pan="-306.16" description="" skinid="ht_node" url="{node16}" title="2F 쉼터"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node10">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:04" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-94.4/-0.2/100.0" tilt="0.89" id="Point01" pan="-13.55" description="" skinid="ht_node" url="{node21}" title="2F SRC 엘리베이터 앞"/>
+      <hotspot target="97.3/2.5/100.0" tilt="0.13" id="Point02" pan="-70.83" description="" skinid="ht_node" url="{node22}" title="강당 구름다리"/>
+      <hotspot target="-83.7/4.5/100.0" tilt="-2.33" id="Point03" pan="-171" description="" skinid="ht_node" url="{node17}" title="2F 도서관 복도"/>
+      <hotspot target="-27.2/4.8/100.0" tilt="-2.89" id="Point04" pan="-291.65" description="" skinid="ht_node" url="{node7}" title="SRC 가는길"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node21">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:03" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="71.0/2.6/100.0" tilt="0.04" id="Point01" pan="-40.53" description="" skinid="ht_node" url="{node25}" title="BSSM GYM"/>
+      <hotspot target="19.2/-1.7/100.0" tilt="-1.83" id="Point02" pan="-170.05" description="" skinid="ht_node" url="{node24}" title="글누리"/>
+      <hotspot target="0.0/0.0/100.0" tilt="-1.58" id="Point03" pan="-185.36" description="" skinid="ht_node" url="{node10}" title="SRC 2F 강당입구"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node22">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022:10:05 17:20:52" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="49.9/-5.6/100.0" tilt="1.89" id="Point01" pan="-260.95" description="" skinid="ht_node" url="{node23}" title="강당"/>
+      <hotspot target="-3.3/0.6/100.0" tilt="-5.04" id="Point02" pan="-82.34" description="" skinid="ht_node" url="{node10}" title="SRC 2F 강당입구"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node23">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node23/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022:10:05 17:24:11" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-83.4/-4.2/100.0" tilt="10.96" id="Point01" pan="-74.93" description="" skinid="ht_node" url="{node22}" title="강당 구름다리"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node24">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node24/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022:10:05 17:28:32" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-94.0/-2.8/100.0" tilt="-3.94" id="Point01" pan="-292.7" description="" skinid="ht_node" url="{node21}" title="2F SRC 엘리베이터 앞"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node25">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node25/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:03" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-94.5/-3.0/100.0" tilt="1.14" id="Point01" pan="-157.73" description="" skinid="ht_node" url="{node21}" title="2F SRC 엘리베이터 앞"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node18">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:03" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title="21_3F 베르실"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="-55.3/-1.3/100.0" tilt="29.46" id="Point01" pan="-67.9" description="" skinid="ht_node" url="{node19}" title="3F 윗 베르실"/>
+      <hotspot target="-61.9/-9.4/100.0" tilt="-5.67" id="Point02" pan="-69.1" description="" skinid="ht_node" url="{node20}" title="창의공작실"/>
+      <hotspot target="-94.7/-2.7/100.0" tilt="-5.31" id="Point03" pan="-61.72" description="" skinid="ht_node" url="{node17}" title="2F 도서관 복도"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node19">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node19/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:03" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="74.0/2.3/100.0" tilt="-2.09" id="Point01" pan="-39.28" description="" skinid="ht_node" url="{node18}" title="3F 베르실"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node20">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node20/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:03" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="73.3/5.0/100.0" tilt="-0.76" id="Point01" pan="-114.7" description="" skinid="ht_node" url="{node18}" title="3F 베르실"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <panorama id="node15">
+    <input overlap="1" width="1920" leveltileurl="../tiles/node15/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbias="0.400" levelbiashidpi="1.000" height="1920" leveltilesize="510" levelingroll="0">
+      <level width="1920" preload="0" height="1920" predecode="0"/>
+      <level width="960" preload="0" height="960" predecode="0"/>
+      <level width="480" preload="1" height="480" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="120" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360"/>
+    </view>
+    <userdata source="" comment="" latitude="" datetime="2022-10-06 오후 8:02" tags="BSSM_360_Edit" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" borderalpha="1" width="180" backgroundalpha="1" textcolor="0x000000" background="1" borderradius="1" height="20" border="1" bordercolor="0x000000" textalpha="1" enabled="1" backgroundcolor="0xffffff"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.2509803921568627" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot target="72.4/-9.8/100.0" tilt="-3.3" id="Point01" pan="-314.63" description="" skinid="ht_node" url="{node11}" title="2층 급식실 이동 계단"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomoutpause="1" zoomin="0" softedge="0" type="crossdissolve" zoomspeed="2" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedmouse="0" speedwheel="1" dblclickfullscreen="0" contextprojections="0" sensitivity="8" hideabout="0"/>
+  </panorama>
+  <masternode>
+    <userdata source="" comment="" latitude="" datetime="" tags="" copyright="" longitude="" description="" info="" author="" customnodeid="" title=""/>
+  </masternode>
+</tour>
